@@ -2,7 +2,7 @@
 layout: post
 title:  "Beginning React: What"
 date:   2026-06-27 00:00:00 +0000
-categories: react fso
+categories:
 ---
 I have decided to quit CS50W and begin Full Stack Open instead. In my eyes it appears much more well rounded than CS50W as it covers RESTful, containers and more. It has all of the things that I wanted to delve into after CS50W. So, why not just drop CS50W and start this one now?
 
@@ -41,11 +41,13 @@ Which made me think… And realise that the way Babel works is not so foreign af
 
 ### Other notes
 In any case, my arduous journey of learning Reacts syntax and their huge library officially begins...
-{% highlight jsx %}
+
+```
 Guard Operator (&&)
 Const result = value1 && value2;
 If value1 is true, the result will be value2. This works like an if-statement.
-{% endhighlight %}
+```
+
 This is some Javascript syntax that’s useful to remember. I can use this for inserting if-statements directly in the JSX that renders HTML components. Like so:
 {% highlight jsx %}
 return (
@@ -57,3 +59,5 @@ return (
 )
 {% endhighlight %}
 Note to self: I really need to properly look into arrow functions and what’s the deal with them.
+
+[Previous Post](../../../2026/06/24/not-google.html) | [Next Post](../../../2026/07/01/react-states.html)

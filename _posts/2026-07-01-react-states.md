@@ -2,7 +2,7 @@
 layout: post
 title:  "React States and Derived Variables for Display of Data"
 date:   2026-07-01 00:00:00 +0000
-categories: react fso
+categories:
 ---
 Today I finished part 1 of FSO.
 
@@ -52,3 +52,5 @@ Those marathon length tutorial videos, turns out, are actually really useful and
 The people who yell “go build projects instead of following tutorials” are wrong. I tried doing that for years and would only get confused in my own search. Missing missing reasons is a massive obstacle for someone who doesn’t even understand the basics of x framework, library or language. People seem to forget that.
 
 Or perhaps... I’m just too bad at this? I don’t think so.
+
+[Previous Post](../../../2026/06/27/beginning-react.html) | [Next Post](../../../2026/07/07/useful-javascript.html)

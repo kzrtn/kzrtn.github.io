@@ -2,7 +2,7 @@
 layout: post
 title:  "NotGoogle Search Clone"
 date:   2026-06-24 00:00:00 +0000
-categories: javascript html experiments
+categories:
 ---
 Today I worked on my ‘NotGoogle’ search clone.
 
@@ -82,3 +82,6 @@ Though finally... I realised that all of that was incredibly unnecessary, I coul
 Buttons in forms are both a part of form control and form submission data. Text field input name value pairs are always included during submission, but for buttons, they are only submitted when the specific button is used to submit the form.
 
 This is a much better solution than the first idea of using a hidden text input field to tack on the search parameters. I feel pretty silly for not realising this at first. Oh well!
+
+
+Previous Post|[Next Post](../../../2026/06/27/beginning-react.html)

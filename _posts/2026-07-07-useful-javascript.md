@@ -2,7 +2,7 @@
 layout: post
 title:  "Useful Javascript Arrays and its copy-by-reference quirks"
 date:   2026-07-07 00:00:00 +0000
-categories: javascript
+categories:
 ---
 ### Useful Array Methods
 My ear infection meant staying home instead of going to work. And that means... More code time!
@@ -62,3 +62,6 @@ It’s shorter but it’s not too clean or readable. Oops.
 Continuing this javascript tutorial side quest, I’m learning about Jasmine and testing frameworks.
 
 Note to self: I need to look up the `this` key word in Javascript. And how its usage differs in classes, functions and arrow functions.
+
+
+[Previous Post](../../../2026/07/01/react-states.html) | [Next Post](../../../2026/07/09/promises-and-async.html)
