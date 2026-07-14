@@ -63,5 +63,6 @@ Continuing this javascript tutorial side quest, I’m learning about Jasmine and
 
 Note to self: I need to look up the `this` key word in Javascript. And how its usage differs in classes, functions and arrow functions.
 
+<br>
 
 [Previous Post](../../../2026/07/01/react-states.html) | [Next Post](../../../2026/07/09/promises-and-async.html)

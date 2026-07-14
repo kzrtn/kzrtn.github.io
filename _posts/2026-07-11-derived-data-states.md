@@ -115,6 +115,6 @@ Now the country details component can decide whether to be visible or not based 
 
 This was challenging but also incredibly fun. I have a very long way to go before I’m ready with all of this.
 
+<br>
 
-
-[Previous Post](../../../2026/07/09/promises-and-async.html) | Next Post
+[Previous Post](../../../2026/07/09/promises-and-async.html) | [Next Post](../../../2026/07/13/node-rest-http.html)

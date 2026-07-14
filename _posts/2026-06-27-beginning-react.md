@@ -60,4 +60,6 @@ return (
 {% endhighlight %}
 Note to self: I really need to properly look into arrow functions and what’s the deal with them.
 
+<br>
+
 [Previous Post](../../../2026/06/24/not-google.html) | [Next Post](../../../2026/07/01/react-states.html)

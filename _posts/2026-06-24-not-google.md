@@ -83,5 +83,6 @@ Buttons in forms are both a part of form control and form submission data. Text 
 
 This is a much better solution than the first idea of using a hidden text input field to tack on the search parameters. I feel pretty silly for not realising this at first. Oh well!
 
+<br>
 
 Previous Post|[Next Post](../../../2026/06/27/beginning-react.html)

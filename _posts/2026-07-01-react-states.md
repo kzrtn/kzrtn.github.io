@@ -53,4 +53,6 @@ The people who yell “go build projects instead of following tutorials” are w
 
 Or perhaps... I’m just too bad at this? I don’t think so.
 
+<br>
+
 [Previous Post](../../../2026/06/27/beginning-react.html) | [Next Post](../../../2026/07/07/useful-javascript.html)

@@ -76,5 +76,6 @@ Everything else computes to a truthy value. So an empty array or object is techn
 
 FSO uses the axios library to handle the RESTful requests to the backend. So no manually writing it out with `fetch` and `await`. I still find promises confusing, I need to get even more practice with it.
 
+<br>
 
 [Previous Post](../../../2026/07/07/useful-javascript.html) | [Next Post](../../../2026/07/09/derived-data-states.html)
