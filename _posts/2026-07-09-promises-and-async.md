@@ -8,7 +8,7 @@ I’m FINALLY at the part about connecting backends, promises and awaits.
 
 <br>
 **Callbacks:**
-: Appears to be a fancy way people describe ‘a function that calls another function when necessary’. Like the anonymous function that is called during an `addEventListener. Callbacks were used in Javascript for async code before promises became a thing.
+: Appears to be a fancy way people describe ‘a function that calls another function when necessary’. Like the anonymous function that is called during an `addEventListener`. Callbacks were used in Javascript for async code before promises became a thing.
 
 There are two kinds of callbacks:
 * **Synchronous callback:** Runs functions passed into it immediately, during the outer function’s execution. E.g. `forEach`, `map`

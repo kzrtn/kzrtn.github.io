@@ -26,7 +26,7 @@ const App = (
   <ChatMessage message="hello" />
   </>
 {% endhighlight %}
-In C, props in the function argument would be illegal, as the ChatMessage function call in App does not explicitly pass any variables/arguments into the function. Heck, the fact that there’s a const variable containing what looks like HTML that is also able to call other functions in the file is incomprehensible to me.
+In C, props in the function argument would be illegal, as the `ChatMessage` function call in `App` does not explicitly pass any variables/arguments into the function. Heck, the fact that there’s a `const` variable containing what looks like HTML that is also able to call other functions in the file is incomprehensible to me.
 
 The answer is that JSX is syntax that gets translated into javascript by Babel afterwards. What is:
 {% highlight jsx %}
