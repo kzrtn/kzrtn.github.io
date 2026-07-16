@@ -54,18 +54,18 @@ In Javascript, a `const` is a constant reference to a value. Which means that it
 ### About HTTP requests
 Some useful acronyms I’ll run into often in web development and network architecture:
 
-*REST* (Representational State Transfer) is an architectural style meant for building scalable web applications. 
+**REST** (Representational State Transfer) is an architectural style meant for building scalable web applications. 
 
-*CRUD:* Create, read, update, and delete. The four basic operations of persistent storage.
+**CRUD:** Create, read, update, and delete. The four basic operations of persistent storage.
 
 There is also a request type `HEAD`, which does not return anything but status code and response headers (no response body).
 
 The HTTP standard talks about two properties related to request types:
-* *Safety:* Executing requests must not cause any side effects on the server (aka the GET request cannot cause any database changes). The response must only return data that already exists on the server.
-* *All HTTP requests should be idempotent:* If a request does generate side effects, then the result should be the same regardless of how many times the request is sent. So HTTP PUT requests should result in the same thing no matter how many times the same PUT request is sent.
+* **Safety:** Executing requests must not cause any side effects on the server (aka the GET request cannot cause any database changes). The response must only return data that already exists on the server.
+* **All HTTP requests should be idempotent:** If a request does generate side effects, then the result should be the same regardless of how many times the request is sent. So HTTP PUT requests should result in the same thing no matter how many times the same PUT request is sent.
 
 Both safety and idempotence are recommendations in the HTTP standard and not something that is guaranteed based on the request type.
 
 <br>
 
-[Previous Post](../../../2026/07/11/derived-data-states.html) | Next Post
+[Previous Post](../../../2026/07/11/derived-data-states.html) | [Next Post](../../../2026/07/16/cors-deployment.html)
