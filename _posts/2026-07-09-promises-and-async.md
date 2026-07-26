@@ -78,4 +78,4 @@ FSO uses the axios library to handle the RESTful requests to the backend. So no 
 
 <br>
 
-[Previous Post](../../../2026/07/07/useful-javascript.html) | [Next Post](../../../2026/07/09/derived-data-states.html)
+[Previous Post](../../../2026/07/07/useful-javascript.html) | [Next Post](../../../2026/07/11/derived-data-states.html)

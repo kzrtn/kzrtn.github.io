@@ -61,5 +61,6 @@ A simple block diagram explaining the state of the stack:
 
 This is what people call a **MERN** stack, which stands for: **MongoDB**, **Express**, **React**, **Node.js**
 
+<br>
 
-[Previous Post](../../../2026/07/13/node-rest-http.html) | Next Post
+[Previous Post](../../../2026/07/13/node-rest-http.html) | [Next Post](../../../2026/07/26/project-structures.html)
