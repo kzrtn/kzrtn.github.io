@@ -4,6 +4,7 @@ title:  "Remove AI Overview from Google Search Extension"
 date:   2026-08-04 00:00:00 +0000
 categories:
 ---
+[You can find the repo here.](https://github.com/kzrtn/google-ai-overview-remover)
 # The Purpose
 I'm learning to program properly. Getting answers spoiled by the AI overview has been stunting my ability to read through documentation and figure things out myself. So I decided to write a simple script to remove any AI answers from Google searches.
 <br />
