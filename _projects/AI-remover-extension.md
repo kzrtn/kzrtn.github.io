@@ -26,7 +26,7 @@ But I was also getting this error:
 `Uncaught TypeError: Cannot read properties of null (reading 'remove')`
 Looks like line 3 (`el.remove()`) was triggering an error since it was grabbing an element that didn't exist. But the script worked, what's happening?
 
-It looks like there's a race condition in here somewhere. If the script fired the element existed, the querySelector returns null and `.remove()` is not a method for null objects.
+It looks like there's a race condition in here somewhere. If the script fired before the element existed, the querySelector returns null and `.remove()` is not a method for null objects.
 
 Adding a simple check solves the bug:
 ```javascript
