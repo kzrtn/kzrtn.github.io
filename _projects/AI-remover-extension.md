@@ -106,6 +106,8 @@ So the answer was the [run_at](https://developer.chrome.com/docs/extensions/deve
 ]
 ```
 And it works perfectly now! I double checked with the debugger and the AI Overview only exists for one frame before it gets completely removed. I didn't expect a small simple script to need this much debugging. But TIL (again) that docs are confusing to navigate and it's a skill issue of mine :)
+<br />
+<br />
 
 # Plans for the future
 Of course, there's still a lot more to implement with this little extension.
