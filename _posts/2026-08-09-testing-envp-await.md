@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Testing, Environment Variables and aync/await (again)"
+title:  "Testing, Environment Variables, aync/await (again) and Promise.all()"
 date:   2026-08-09 00:00:00 +0000
 categories:
 ---
@@ -136,7 +136,54 @@ async function getUser(id) {
 }
 ```
 `resolve` and `reject` in promises are only needed when a new promise is first created.
+<br />
+<br />
 
+# Promise.all
+The `.forEach` method on arrays expects a synchronous function as an input argument. This means that async/await on it will not work.
+
+The solution to waiting for all asynchronous operations to finish executing is the `Promise.all` method.
+```javascript
+beforeEach(async () => {
+ await Note.deleteMany({})
+
+
+ const noteObj = initialNotes.map(note => new Note(note))
+ const promiseArray = noteObj.map(note => note.save())
+ await Promise.all(promiseArray)
+})
+```
+First, the notes are mapped into an array of `Note` objects. Then it is mapped into an array of Promises. After all, each `.save()` method on a Mongoose document object returns a Promise.
+
+`Promise.all` waits for all of the array of promises fed into it to resolve before it returns a single Promise. It returns an array of resolved values, in the order it was inputted. It rejects when any of the input’s promises rejects.
+
+In the line:
+```javascript
+const promiseArray = noteObj.map(note => note.save())
+```
+
+`note.save()` returns a Promise immediately instead of triggering an async write to MongoDB and resolving the result. Mapping over all documents results in an array of pending Promises.
+
+In Javascript, any function that returns a Promise (async function or a function that constructs and returns a Promise (like `.save()` or `Promise.all()`) returns a Promise object immediately and synchronously. The Promise itself is returned right away, it’s only its resolution (the actual returned value) that is asynchronous.
+
+This is why in `.then()` we use a function to to access the resolved value:
+```javascript
+Promise.all(PromiseArray).then(returnedArr => {})
+```
+`.then()` takes a callback function as its argument, to which Javascript automatically calls that callback with the resolved value once the Promise is fulfilled.
+
+`Promise.all` executes the promises it receives in parallel (starts the promises at the same time, concurrently). If the promises need to be executed in a particular order, the operations can be executed inside of a `for...of` block, that guarantees a specific execution order.
+
+```javascript
+beforeEach(async () => {
+  await Note.deleteMany({})
+
+  for (let note of helper.initialNotes) {
+    let noteObject = new Note(note)
+    await noteObject.save()
+  }
+})
+```
 <br>
 
-[Previous Post](../../../2026/07/26/project-structures.html) | Next Post
+[Previous Post](../../../2026/07/26/project-structures.html) | [Next Post](../../../2026/08/13/user-auth-security.html)
