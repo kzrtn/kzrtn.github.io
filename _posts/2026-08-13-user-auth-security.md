@@ -30,6 +30,8 @@ const userSchema = new mongoose.Schema({
 The `ref: 'Note'` references the name of the collection that you wish to reference. Now querying for users will include an array of `Note` IDs that belongs to that user.
 
 However, what if we want that array of `Note` IDs to show the contents of the notes as well? To do that, we need to join the collections. While document databases do not properly support join queries between collections, the Mongoose library can do some of these joins for us. The Mongoose join is done with the [populate](https://mongoosejs.com/docs/populate.html) method.
+
+**NOTE: `populate()` on Mongoose is NOT atomic unlike relational databases' JOIN queries. This means that you cannot guarantee that the data used to join on Mongoose is the same before and after the join as `populate()` does not combine both collections with a single query/instruction cycle**
 <br />
 <br />
 
@@ -115,7 +117,7 @@ FSO uses [bcrypt](https://github.com/kelektiv/node.bcrypt.js) to hash passwords.
 
 FSO also links[ this resource](https://bytebytego.com/guides/how-to-store-passwords-in-the-database/) as a comprehensive guide on storing passwords safely.
 
-What's a salt round used by bcrypt? According to a stack overflow answer, it's more like a cost factor. It means how many times bcrypt's algorithm is used to calculate a single bcrypt hash.
+What's a salt round used by bcrypt? According to [a stack overflow answer](https://stackoverflow.com/questions/46693430/what-are-salt-rounds-and-how-are-salts-stored-in-bcrypt), it's more like a cost factor. It means how many times bcrypt's algorithm is used to calculate a single bcrypt hash.
 
 The algorithm version, the salt and the number of salt rounds is included in the final hashed result in readable form, so storing the hashed result stores all of that data as well.
 
@@ -125,4 +127,4 @@ So when bcrypt hashes an inputted password (such as a user logging in) to compar
 
 <br />
 
-[Previous Post](../../../2026/08/09/testing-envp-await.html) | Next Post
+[Previous Post](../../../2026/08/09/testing-envp-await.html) | [Next Post](../../../2026/08/13/user-auth-jwt.html)
