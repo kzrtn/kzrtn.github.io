@@ -67,4 +67,4 @@ Usernames, passwords and applications using token authentication must always be 
 
 <br />
 
-[Previous Post](../../../2026/08/13/user-auth-security.html) | Next Post
+[Previous Post](../../../2026/08/13/user-auth-security.html) | [Next Post](../../../2026/08/22/useref.html)
