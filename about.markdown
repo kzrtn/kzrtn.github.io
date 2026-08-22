@@ -7,6 +7,7 @@ permalink: /about/
 My name is Jolene, I'm a 26 year old and I'm interested in anything related to computers and technology. This website is dedicated to my journey self learning web development, documenting my projects and my hurdles.
 
 Though, I'm not a complete novice to computers, I graduated from Singapore Polytechnic with a Computer Engineering diploma back in 2021, and I just recently completed Harvard’s CS50x online course in November 2025.
+
 I'm currently progressing through University of Helsinki's Full Stack Open.
 
 ### General links
