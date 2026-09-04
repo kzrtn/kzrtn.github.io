@@ -60,4 +60,4 @@ Component libraries like MUI have these already have these inside each component
 <br />
 <br />
 
-[Previous Post](../../../2026/08/30/react-testing.html) | Next Post
+[Previous Post](../../../2026/08/30/react-testing.html) | [Next Post](../../../2026/09/04/flux-zustand.html)
