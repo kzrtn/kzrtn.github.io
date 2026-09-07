@@ -178,4 +178,4 @@ In order to do that, `.mockResolvedValue(newNote)` configures the mocked `create
 
 <br />
 
-[Previous Post](../../../2026/09/04/flux-zustand.html) | Next Post
+[Previous Post](../../../2026/09/04/flux-zustand.html) | [Next Post](../../../2026/09/07/context.html)
