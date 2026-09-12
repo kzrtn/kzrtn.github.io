@@ -60,8 +60,9 @@ So the flow looks like this:
 3. The browser receives a cookie only containing that random session ID
 4. On the next request, the browser sends that cookie back
 5. Flask-Session finds the file matching the session ID given by the cookie and loads the data into the `session` object
+
 <br />
-<br />
+
 ## HTTPS over HTTP
 Usernames, passwords and applications using token authentication must always be used over HTTPS. As basic authentication involves sending the data to the server in plaintext over HTTP can be intercepted and accessed.
 
