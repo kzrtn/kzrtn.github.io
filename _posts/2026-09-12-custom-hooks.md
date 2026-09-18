@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Finally... Context API. And also TanStack Query"
-date:   2026-09-07 00:00:00 +0000
+title:  "Custom Hooks"
+date:   2026-09-12 00:00:00 +0000
 categories:
 ---
-Part 6C of FSO is about TanStack Query and useContext (finally!)
+Part 7 of FSO is about custom hooks and other extra bits.
 
 ## Custom Hooks
+WIP
 
 ## Custom hooks don't share states between calls
 Creating a custom hook with state within it, each time the hook is called like so:
@@ -17,4 +18,4 @@ It will create a new instance of the state. Which means declaring it in two file
 
 <br />
 
-[Previous Post](../../../2026/09/05/useshallow-zustand.html) | Next Post
+[Previous Post](../../../2026/09/07/context.html) | Next Post
