@@ -7,7 +7,7 @@ categories:
 Part 7 of FSO is about custom hooks and other extra bits. Let's start with the basics.
 
 ## What is a Hook?
-A hook is a special function that let's a function component use React features, such as states, side effects, and context, that persist across renders.
+A hook is a special function that lets a function component use React features, such as states, side effects, and context, that persist across renders.
 
 They have conventions to follow:
 1. Hooks should only be called from React functional components (not inside of conditional statements, etc).
@@ -36,7 +36,7 @@ const [count, setCount] = useState(0)
 React works in a few phases:
 1. **Render:** React calls `App()` and gets a tree of plain objects describing the DOM (also known as the virtual DOM).
 2. **Reconcile:** React compares the new tree to the previous one to evaluate what has changed.
-3. **Commit:** React re-renders the changes to the real DOM.
+3. **Commit:** React applies the changes to the real DOM.
 4. **Effects:** `useEffect` callbacks run, and `useRef` refs point to real DOM nodes.
 
 ```jsx
@@ -119,7 +119,7 @@ Note that `React.memo` only checks props. If the component uses a context value 
 <details markdown="1">
 <summary>useCallback</summary>
 
-It works similarly to `useMemo` but it's for caching functions. As functions defined in a component are recreated as new objects on every render, if it is passed as `props` into a component wrapped in `React.memo`, it would render `React.memo` pointless, as the component will always see a changed prop and re-render anyway. This also happens if it is listed as a dependency of `useEffect` or `useMemo`. It'll cause these two to re-render on every render.
+It works similarly to `useMemo` but it's for caching functions. As functions defined in a component are recreated as new objects on every render, if it is passed as `props` into a component wrapped in `React.memo`, it would render `React.memo` pointless, as the component will always see a changed prop and re-render anyway. This also happens if it is listed as a dependency of `useEffect` or `useMemo`. It'll cause these two to re-run on every render.
 
 ```jsx
 const handleDelete = useCallback((id) => {
@@ -173,7 +173,7 @@ The spread syntax allows an iterable (array or object) to be expanded like so:
 const array = [1, 2, 3];
 const obj = { ...array }; // { 0: 1, 1: 2, 2: 3 }
 ```
-We can actually use use the spread syntax to assign attributes to elements too:
+We can actually use the spread syntax to assign attributes to elements too:
 ```jsx
 const name = useField('text')
 
