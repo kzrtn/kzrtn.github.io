@@ -197,4 +197,4 @@ It will create a new instance of the state. Which means declaring it in two file
 
 <br />
 
-[Previous Post](../../../2026/09/07/context.html) | Next Post
+[Previous Post](../../../2026/09/07/context.html) | [Next Post](../../../2026/10/03/graphql.html)

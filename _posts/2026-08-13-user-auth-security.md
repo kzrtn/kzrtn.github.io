@@ -127,4 +127,4 @@ So when bcrypt hashes an inputted password (such as a user logging in) to compar
 
 <br />
 
-[Previous Post](../../../2026/08/09/testing-envp-await.html) | [Next Post](../../../2026/08/13/user-auth-jwt.html)
+[Previous Post](../../../2026/08/09/testing-envp-await.html) | [Next Post](../../../2026/08/18/user-auth-jwt.html)
