@@ -64,6 +64,34 @@ if (typeof maybe === "string") { // TypeScript knows that maybe is a string
 A value with type `unknown` MUST be narrowed before it can be used in a type-specific way. `any` can be narrowed too, but it's not necessary as Typescript lets you do almost anything with it.
 
 ### never
+`never` is a weird one. It's a type mainly used to denote that a function never returns, such as functions that always throw an error or loops forever. In Javascript, `void` functions that doesn't return any value will implicitly return the value `undefined`, `never` guards against that. Annotating a function that can finish normally with `never` will cause Typescript to report an error.
+```ts
+function greet(x:string): void {
+  console.log(`Hello ${x}`);
+}
+
+const wow = greet("world"); // wow becomes undefined
+
+function fail(message: string): never {
+  throw new Error(message);
+} // Never finishes normally, so it never returns
+```
+
+It's also used to check that there's nothing left in a union:
+```ts
+function fn(x: string | number) {
+  if (typeof x === "string") {
+    // do something
+  } else if (typeof x === "number") {
+    // do something else
+  } else {
+    const unreachable: never = x; // has type 'never'!
+    // This assignment works as a safety check. If someone changes the
+    // function to accept more types, Typescript will show an error since
+    // the new type cannot be assigned to 'never' in the else branch
+  }
+}
+```
 (Work in progress)
 
 <br />
