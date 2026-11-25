@@ -307,4 +307,4 @@ type StringNumberPair = [string, number];
 
 <br />
 
-[Previous Post](../../../2026/10/03/graphql.html) | [Next Post](../../../2026/11/10/cicd.html)
+[Previous Post](../../../2026/10/03/graphql.html) | [Next Post](../../../2026/11/25/cicd.html)
